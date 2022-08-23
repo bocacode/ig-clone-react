@@ -28,7 +28,7 @@ function Feed() {
         <h1>The feed</h1>   
         <div>
             {photos.map((photo: Photo)=> {
-                 return <PhotoView key={photo._id} photo={photo} />
+                 return <PhotoView key={photo._id} photo={photo} setPhotos={setPhotos} />
                 //return <div><img src={photo.photoUrl} /></div>
             })
                 }
